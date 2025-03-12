@@ -73,7 +73,9 @@ db.student.insertMany([{
     "phone": "6981280319",
     "email":"Brier.Kilgour@student.monash.edu"
 }
-]); 
+]);  
 db.student.find();
+
 db.student.find({"address":{$regex: /Moorabbin$/}});
+
 db.student.find({"address":{$regex: /Moorabbin$/}},{"_id":0,"firstName":1,"lastName":1});
