@@ -2,9 +2,9 @@
 Databases Applied 2
 applied2_student.sql
 
-student id:
-student name:
-last modified date:
+student id: 34274723
+student name: JichaoLiang
+last modified date: 12/03/2025
 
 */
 
