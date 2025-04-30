@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D7DC21B-4495-4AF5-8018-E5522FA5BCB7" name="ORDERS">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 15:10:48 UTC</createdTime>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="order_no" id="9221B1C6-132C-D9EF-2BE1-1639880D889F">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 15:11:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Order number]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order_date" id="3F416AD0-287F-1108-F3AE-720D87927FB9">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 15:12:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[Order date]]></commentInRDBMS>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="360DA978-201D-FFFA-88BB-58DB5CD32046" name="ORDERS PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 15:11:56 UTC</createdTime>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9221B1C6-132C-D9EF-2BE1-1639880D889F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
