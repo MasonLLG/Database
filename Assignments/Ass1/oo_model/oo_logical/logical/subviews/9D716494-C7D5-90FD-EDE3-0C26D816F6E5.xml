@@ -15,6 +15,9 @@
 <notation>2</notation>
 <showAllDetails>false</showAllDetails>
 <showElements>true</showElements>
+<propertyMap>
+<property name="ID number" value="34274723"/>
+</propertyMap>
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2E42A248-236E-ACE9-577D-F77EC9FE9F79" otype="Entity" vid="12E97A7F-2A45-7EC7-FAFA-3DC202258000">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -26,7 +29,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.TVLegend" oid="5BE060D8-8A5C-A9D9-FCD2-5E7766C0C5E1" otype="Legend" vid="7B099600-504B-C6BC-0B93-208215A16B05">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="10" y="10" width="232" height="135"/>
+<bounds x="10" y="10" width="245" height="154"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C" otype="Entity" vid="8D67B7B3-FCFC-047F-253F-ECF50F2BC7C1">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>

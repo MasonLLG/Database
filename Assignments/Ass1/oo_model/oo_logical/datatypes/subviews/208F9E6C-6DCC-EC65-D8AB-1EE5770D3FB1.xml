@@ -13,6 +13,9 @@
 <diagramColor>-1</diagramColor>
 <display>false</display>
 <notation>1</notation>
+<propertyMap>
+<property name="ID number" value="34274723"/>
+</propertyMap>
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.datatypes.TVStructuredType" oid="47E390DE-0671-C4B1-8428-0F45CBEE18F8" otype="StructuredType" vid="D78E7EFA-BA4A-A4AE-1760-F58B02361E50">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
