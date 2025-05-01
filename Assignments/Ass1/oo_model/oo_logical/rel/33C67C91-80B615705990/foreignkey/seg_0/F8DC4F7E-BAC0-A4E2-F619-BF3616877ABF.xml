@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F8DC4F7E-BAC0-A4E2-F619-BF3616877ABF" containerWithKeyObject="16763DAE-06FB-707D-0AB3-9FF1FF474260" localFKIndex="457BE4AE-38FC-C374-D3CF-F438A91DA6D1" name="mani_bk_fk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>3230BF8F-EFAA-DED4-96E4-0636DAE52C20</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<referredTableLongName>MANIFEST</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DF5D3096-B35A-6BC2-E3C6-E4B98F9CAE87</referredTableID>
+<keyObject>31E7BF19-9FAA-F8A5-6D7C-8414ABF371FF</keyObject>
+<referredKeyID>31E7BF19-9FAA-F8A5-6D7C-8414ABF371FF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>mani_name</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

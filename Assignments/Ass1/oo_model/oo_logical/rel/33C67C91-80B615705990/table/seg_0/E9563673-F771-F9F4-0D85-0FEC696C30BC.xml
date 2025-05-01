@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9563673-F771-F9F4-0D85-0FEC696C30BC" name="PASSENGER">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<generatorID>5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pas_id" id="DA1062B3-BDA9-6DE8-AC09-6C203AA6A20F">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>E1AF8338-0D51-E151-A659-F4DCE4E93A90</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pas_fstname" id="8ABC22B7-8096-AC0D-5F6A-5D6250677CDB">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger first name]]></commentInRDBMS>
+<generatorID>5A82CBCA-D8B6-7D82-6292-6FE1A3630FC5</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pas_lstname" id="2F75D518-1B74-2C10-239B-96783BA3AEC2">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger last name]]></commentInRDBMS>
+<generatorID>19C12896-474E-87D6-5A8F-F89506327A9B</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pas_gender" id="4EF48F57-7E8C-1778-447A-D1AC36B2C3EB">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger gender, F-Female, M-Male, O-Others]]></commentInRDBMS>
+<generatorID>BDB14E87-58FC-D3ED-0C65-F27F703ABFC1</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<constraintName>chk_pasgender</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="Female"/>
+<valueDef value="M" description="Male"/>
+<valueDef value="O" description="Others"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gas_dob" id="5AEC6CBC-79D9-7D65-2EF2-5A5426107897">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger date of birth]]></commentInRDBMS>
+<generatorID>1409E01E-BD89-9853-8EFC-CA102FA0657A</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gud_phone" id="9425A582-7D88-7CE4-5C25-356C56AD070C">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger contact phone number.If minors, use guardian phone number]]></commentInRDBMS>
+<generatorID>72858493-36D8-B318-E320-E4680AA7F95E</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gud_id" id="6F1CC1FF-8544-A063-138A-0D75C32F75BA">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Guardian ID if minors]]></commentInRDBMS>
+<generatorID>4173EA43-2EA1-D5F5-B220-7DAD0CEF75B1</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="addr_no" id="454276AA-69B7-DB16-D485-511FE014D5CA">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address number]]></commentInRDBMS>
+<generatorID>70FF6811-A0E1-2807-0F78-3DE2016B2185</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D364C22A-D9B9-FA74-2E0F-1F9BC180571A" referredColumn="2DAD5707-DE18-0E15-7DF0-683454027EDE"/>
+</associations>
+</Column>
+<Column name="pas_id1" id="2883F707-2FA5-C0AC-DE8E-5D6734F28CB2">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>03E3B230-CA05-B584-0C30-3442A59B4FB9</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE36F311-4347-DEE3-5086-1FD2080161EC" referredColumn="DA1062B3-BDA9-6DE8-AC09-6C203AA6A20F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9BE81667-5C14-6AEE-BDB3-99930596B470" name="PASSENGER_PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<generatorID>4B22F9E6-DFA8-4A8D-5F11-8CC29409072D</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA1062B3-BDA9-6DE8-AC09-6C203AA6A20F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A504BA98-26FD-8DE3-6413-C5E4B647E46C" name="addr_pas_fk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<generatorID>E1CC6371-8B0D-864E-0D0C-3003DEF08BBA</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="454276AA-69B7-DB16-D485-511FE014D5CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86C4199F-AB37-2963-84C2-623A1CD4CFB7" name="pas_pas_fk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<generatorID>0C7DC4B4-FDFD-7831-12B4-F43E52B34D99</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2883F707-2FA5-C0AC-DE8E-5D6734F28CB2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

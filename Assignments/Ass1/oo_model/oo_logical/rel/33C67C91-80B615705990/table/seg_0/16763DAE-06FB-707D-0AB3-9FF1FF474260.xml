@@ -1,0 +1,183 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16763DAE-06FB-707D-0AB3-9FF1FF474260" name="BOOKING">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>7D297154-FEA4-07B3-627E-082C64243610</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bk_no" id="2EAFC772-70F4-CEF6-DCE9-12A5783CAA89">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Booking number]]></commentInRDBMS>
+<generatorID>1EF5A6D5-6B53-4492-94F9-71CA962CFBB5</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pas_id" id="DD8DBCD6-8B9A-AC95-2CE1-90586DCE1217">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>EC9108E3-82FB-843B-879A-DBF4014C4E5E</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CFB62082-D50A-62B4-682B-668C9E8ACF8F" referredColumn="DA1062B3-BDA9-6DE8-AC09-6C203AA6A20F"/>
+</associations>
+</Column>
+<Column name="cruise_id" id="E5B0E303-0329-D400-57FB-280B6F07EE92">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>AF023B73-8F52-8BC2-BC16-532E583FD72E</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1580118A-1BF9-EBAF-BC68-A012E640BD24" referredColumn="D79A248B-AEB0-6135-0090-1927FE0A1CFD"/>
+</associations>
+</Column>
+<Column name="cab_no" id="CEE99334-FDB9-5ADD-B389-54BCAD001BB0">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin number]]></commentInRDBMS>
+<generatorID>5C171689-53C5-D5E1-EC96-9EA919C54B75</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41AC1DF7-1770-3274-F4D6-1785EA23CDE5" referredColumn="7A7BC1D1-DB6D-7700-9613-EADE762193D1"/>
+</associations>
+</Column>
+<Column name="ship_code" id="ECFB3340-783C-01EA-D8CA-6F8B548A6630">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>FEB4EE1C-FE42-4296-29E9-537DFE37FC96</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="41AC1DF7-1770-3274-F4D6-1785EA23CDE5" referredColumn="A3024FF9-D7B7-B3DB-5D08-E4A85B268FDB"/>
+</associations>
+</Column>
+<Column name="mani_name" id="5524984C-6B3E-CD13-07CE-DDA991BE17B5">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manifest name]]></commentInRDBMS>
+<generatorID>F3278442-FAF4-FCF5-8C94-D327489B90B3</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F8DC4F7E-BAC0-A4E2-F619-BF3616877ABF" referredColumn="EECBB561-F082-B114-35D0-E5A263C894B9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A045EAFF-EE12-9A61-DF05-7199257F82B2" name="BOOKING_PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>F0A57412-CFEC-E090-24E0-9F1833B110C4</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EAFC772-70F4-CEF6-DCE9-12A5783CAA89"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8912919-C2E3-4FC3-B48B-3473ECE9CCA0" name="BOOKING_NK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>99C65106-749B-EA8A-B215-45117AE78AD2</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD8DBCD6-8B9A-AC95-2CE1-90586DCE1217"/>
+<colUsage columnID="E5B0E303-0329-D400-57FB-280B6F07EE92"/>
+<colUsage columnID="CEE99334-FDB9-5ADD-B389-54BCAD001BB0"/>
+<colUsage columnID="ECFB3340-783C-01EA-D8CA-6F8B548A6630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A730E060-2B13-63CE-6FDD-BDCB1BE6A890" name="cab_bk_fk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>760EEB08-ECD9-665F-5D6D-104930EE7AE3</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEE99334-FDB9-5ADD-B389-54BCAD001BB0"/>
+<colUsage columnID="ECFB3340-783C-01EA-D8CA-6F8B548A6630"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="457BE4AE-38FC-C374-D3CF-F438A91DA6D1" name="mani_bk_fk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>3230BF8F-EFAA-DED4-96E4-0636DAE52C20</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5524984C-6B3E-CD13-07CE-DDA991BE17B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AF84667-E903-7554-68E3-A6BA1CC69128" name="pas_bk_pk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:56:32 UTC</createdTime>
+<generatorID>F4048F5D-A674-F189-429F-359A8970F38C</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD8DBCD6-8B9A-AC95-2CE1-90586DCE1217"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2E5CE41-D19C-3EBE-5ADB-424CCFA99AFC" name="cruise_bk_pk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:57:29 UTC</createdTime>
+<generatorID>F3AF3B09-B1EF-3C3F-1365-73B5BC5B4D7A</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5B0E303-0329-D400-57FB-280B6F07EE92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

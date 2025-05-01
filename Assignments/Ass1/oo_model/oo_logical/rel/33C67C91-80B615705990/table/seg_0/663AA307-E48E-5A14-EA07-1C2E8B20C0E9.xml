@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="663AA307-E48E-5A14-EA07-1C2E8B20C0E9" name="OPERATOR">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>2E42A248-236E-ACE9-577D-F77EC9FE9F79</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="op_id" id="F5B6CEAB-56DF-4C99-C3A9-C10C973F6491">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operator ID]]></commentInRDBMS>
+<generatorID>11123C45-D305-59CB-FA70-6AC4BA36DA4B</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cp_name" id="0B28F033-0804-324B-BF73-DDA60CFE3B66">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operate company name]]></commentInRDBMS>
+<generatorID>022F87DC-1928-1CEF-78C3-A9A18B82BDFF</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ceo_name" id="1AF4C085-168E-2E71-73B7-0B2AEF29DEE3">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operate company CEO name]]></commentInRDBMS>
+<generatorID>15E7428F-D0CA-0068-7B7A-717478CA832F</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B2E06CEE-8F0A-D0CE-208B-6CC94960B7F9" name="OPERATOR_PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>BF8C1215-23D5-2A65-6DF7-02519F9F6B49</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5B6CEAB-56DF-4C99-C3A9-C10C973F6491"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ECC9EFA4-C2CC-EC40-8696-1D85FB550863" name="ADDRESS">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>53DE7C88-DCD7-0C65-AE5B-C390EDAC1790</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="addr_no" id="2DAD5707-DE18-0E15-7DF0-683454027EDE">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address number]]></commentInRDBMS>
+<generatorID>7CB3EBBC-799A-3952-5393-428E3AB6C427</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street" id="9B0E9C17-81BD-6A0C-C983-BEFD0AE2968E">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address street]]></commentInRDBMS>
+<generatorID>7E006A68-1DAB-A367-F536-864A6CC125B2</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="town" id="99BC2F47-F3A9-8820-20DD-6FDA725EF9FC">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address town]]></commentInRDBMS>
+<generatorID>B7879D63-9B20-8BEB-B116-283B32549EEF</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="postcode" id="DD29A9B9-F171-1E77-F69B-53E0AE1FF8A8">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address postcode]]></commentInRDBMS>
+<generatorID>34AE8B66-CD5A-A7C2-F1AC-67F8D52A93A0</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country_name" id="F214749E-AC4C-CA6F-1CB0-A5440ECE052E">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address country name]]></commentInRDBMS>
+<generatorID>680F2D42-C0E8-1C9B-73F9-E2486D6806F9</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C6CA98A-7A6E-F9B9-D0B5-657680FAC0F1" name="ADDRESS_PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>115574F4-EF16-120F-D64D-432C03A7DA97</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DAD5707-DE18-0E15-7DF0-683454027EDE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

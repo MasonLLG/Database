@@ -90,21 +90,6 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="gud_id" id="30194EAA-8CD2-F0C9-E0CB-D5B1594C9DA0">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 08:07:11 UTC</createdTime>
-<commentInRDBMS><![CDATA[Guardian ID if has guardian]]></commentInRDBMS>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="gud_phone" id="72858493-36D8-B318-E320-E4680AA7F95E">
 <createdBy>ALIENWARE</createdBy>
 <createdTime>2025-05-01 08:07:56 UTC</createdTime>
@@ -120,11 +105,42 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="pas_id1" id="948495B2-B467-6511-5C3B-95A7A6A89374">
+<Attribute name="gud_id" id="4173EA43-2EA1-D5F5-B220-7DAD0CEF75B1">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 10:18:04 UTC</createdTime>
+<createdTime>2025-05-01 13:23:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[Guardian ID if minors]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="addr_no" id="70FF6811-A0E1-2807-0F78-3DE2016B2185">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 10:26:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address number]]></commentInRDBMS>
+<generatorID>E1CC6371-8B0D-864E-0D0C-3003DEF08BBA</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<referedAttribute>7CB3EBBC-799A-3952-5393-428E3AB6C427</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pas_id1" id="03E3B230-CA05-B584-0C30-3442A59B4FB9">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:22:14 UTC</createdTime>
 <commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
-<generatorID>7D2FAC62-E995-902A-AD4C-4E73BF2FCFD7</generatorID>
+<generatorID>0C7DC4B4-FDFD-7831-12B4-F43E52B34D99</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
@@ -137,29 +153,15 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="addr_no" id="70FF6811-A0E1-2807-0F78-3DE2016B2185">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 10:26:26 UTC</createdTime>
-<commentInRDBMS><![CDATA[Address number]]></commentInRDBMS>
-<generatorID>E1CC6371-8B0D-864E-0D0C-3003DEF08BBA</generatorID>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<referedAttribute>7CB3EBBC-799A-3952-5393-428E3AB6C427</referedAttribute>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="4B22F9E6-DFA8-4A8D-5F11-8CC29409072D" name="PASSENGER PK">
 <createdBy>ALIENWARE</createdBy>
 <createdTime>2025-05-01 08:03:32 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

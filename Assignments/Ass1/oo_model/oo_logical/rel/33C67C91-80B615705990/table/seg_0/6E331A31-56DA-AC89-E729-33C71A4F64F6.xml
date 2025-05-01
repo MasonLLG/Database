@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6E331A31-56DA-AC89-E729-33C71A4F64F6" name="CABIN">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>5F40A741-2BFA-7DFA-9D24-6FC08AF90B09</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cab_no" id="7A7BC1D1-DB6D-7700-9613-EADE762193D1">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin number]]></commentInRDBMS>
+<generatorID>46C76777-ED1F-5E4F-0438-A98AFB3A0E2E</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ship_code" id="A3024FF9-D7B7-B3DB-5D08-E4A85B268FDB">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>EFBE67D4-622D-0E2A-3BE0-361355D9FA1D</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2232231B-C1E1-F949-4369-F1AAEFC3BEE1" referredColumn="4C9E5EA0-EA9E-A058-E3BC-6A119293C3F9"/>
+</associations>
+</Column>
+<Column name="slp_capacity" id="630EFAFE-A4C1-EB80-8872-0DC99C293BE6">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin sleeping capacity]]></commentInRDBMS>
+<generatorID>CC36AF59-20C3-015E-35C6-C35AA5171B87</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cab_class" id="99F1F043-6587-65C1-BA4E-796B5995E951">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cabin class, I-Interior, O-Ocean view, B-Balcony, S-Suite]]></commentInRDBMS>
+<generatorID>A904BE4B-6D65-5457-65E7-0DED958CAE04</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<constraintName>chk_cabclass</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Balcony"/>
+<valueDef value="I" description="Interior"/>
+<valueDef value="O" description="Ocean view"/>
+<valueDef value="S" description="Suite"/>
+</listOfValues>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="047589D1-7902-ACA7-3FE8-9176751823A8" name="CABIN_PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:16:44 UTC</createdTime>
+<generatorID>BCB8C1A3-7C43-D700-75B0-42D322450819</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A7BC1D1-DB6D-7700-9613-EADE762193D1"/>
+<colUsage columnID="A3024FF9-D7B7-B3DB-5D08-E4A85B268FDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="728C094B-3DC1-0A97-C54B-0A0BA53AED3D" name="ship_cab_fk">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 13:57:29 UTC</createdTime>
+<generatorID>430E024B-CB74-76EE-A3D5-F13F3132DA0A</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3024FF9-D7B7-B3DB-5D08-E4A85B268FDB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
