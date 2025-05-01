@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D7DC21B-4495-4AF5-8018-E5522FA5BCB7" name="ORDERS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="359C2D5A-109E-1201-3C5A-4A49F69741F0" name="ORDERLINE">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:10:48 UTC</createdTime>
+<createdTime>2025-04-30 15:56:32 UTC</createdTime>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
@@ -15,10 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="order_no" id="9221B1C6-132C-D9EF-2BE1-1639880D889F">
+<Attribute name="ol_qtyordered" id="790FC373-21FD-C99D-2FCA-36C452C0D27B">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:11:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[order number]]></commentInRDBMS>
+<createdTime>2025-04-30 15:58:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantity ordered orderline]]></commentInRDBMS>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
@@ -29,29 +29,46 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="order_date" id="3F416AD0-287F-1108-F3AE-720D87927FB9">
+<Attribute name="ol_lineprice" id="0CA49460-92E7-4B3B-E782-C0D4B123282F">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:12:15 UTC</createdTime>
-<commentInRDBMS><![CDATA[Order date]]></commentInRDBMS>
+<createdTime>2025-04-30 16:00:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[orderline line price]]></commentInRDBMS>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cust_no" id="B5921AA1-7796-CF46-1EE3-B3CF9B8667FF">
+<Attribute name="prod_no" id="786D1F89-3E4F-0BCB-5E13-3894005C16F8">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:24:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Customer number]]></commentInRDBMS>
-<generatorID>3F9973AB-2EE4-F9E6-13DB-E92A57E5D065</generatorID>
+<createdTime>2025-04-30 16:15:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[product number]]></commentInRDBMS>
+<generatorID>42325BDF-FB03-FA4C-EDE3-19218B16FC35</generatorID>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
 </engineerTo>
-<referedAttribute>2E20C7C0-4711-6D57-2DAE-7999180D8CBD</referedAttribute>
+<referedAttribute>592A2DD1-DBDB-2978-98FC-512EFFD6C657</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order_no" id="ADE15042-7932-A204-0CE9-692357271E7F">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 16:19:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[order number]]></commentInRDBMS>
+<generatorID>413BA82D-1A6F-79AE-A16F-42B6DBF68AE9</generatorID>
+<ownerDesignName>cust_orders</ownerDesignName>
+<engineerTo>
+<item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
+</engineerTo>
+<referedAttribute>9221B1C6-132C-D9EF-2BE1-1639880D889F</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -60,16 +77,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="360DA978-201D-FFFA-88BB-58DB5CD32046" name="ORDERS PK">
+<identifier id="6FA9AE81-AA1F-4487-894A-DA4BB41B5E64" name="ORDERLINE PK">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:11:56 UTC</createdTime>
+<createdTime>2025-04-30 15:57:38 UTC</createdTime>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9221B1C6-132C-D9EF-2BE1-1639880D889F</attributeRef>
+<attributeRef>786D1F89-3E4F-0BCB-5E13-3894005C16F8</attributeRef>
+<attributeRef>ADE15042-7932-A204-0CE9-692357271E7F</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

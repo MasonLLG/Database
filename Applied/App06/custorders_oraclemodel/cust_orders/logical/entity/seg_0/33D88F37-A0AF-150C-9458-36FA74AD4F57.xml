@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D7DC21B-4495-4AF5-8018-E5522FA5BCB7" name="ORDERS">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="33D88F37-A0AF-150C-9458-36FA74AD4F57" name="PRODUCT">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:10:48 UTC</createdTime>
+<createdTime>2025-04-30 15:33:56 UTC</createdTime>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
@@ -15,10 +15,10 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="order_no" id="9221B1C6-132C-D9EF-2BE1-1639880D889F">
+<Attribute name="prod_no" id="592A2DD1-DBDB-2978-98FC-512EFFD6C657">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:11:17 UTC</createdTime>
-<commentInRDBMS><![CDATA[order number]]></commentInRDBMS>
+<createdTime>2025-04-30 15:34:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[product number]]></commentInRDBMS>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
@@ -29,47 +29,47 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="order_date" id="3F416AD0-287F-1108-F3AE-720D87927FB9">
+<Attribute name="prod_des" id="A306E850-4B77-2445-CD9C-ED84C52F91AF">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:12:15 UTC</createdTime>
-<commentInRDBMS><![CDATA[Order date]]></commentInRDBMS>
+<createdTime>2025-04-30 15:34:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[product description]]></commentInRDBMS>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cust_no" id="B5921AA1-7796-CF46-1EE3-B3CF9B8667FF">
+<Attribute name="prod_unit_pric" id="134BE465-79A3-3FC0-A7D6-9F5DDB671178">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:24:49 UTC</createdTime>
-<commentInRDBMS><![CDATA[Customer number]]></commentInRDBMS>
-<generatorID>3F9973AB-2EE4-F9E6-13DB-E92A57E5D065</generatorID>
+<createdTime>2025-04-30 15:39:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Product unit price]]></commentInRDBMS>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
 </engineerTo>
-<referedAttribute>2E20C7C0-4711-6D57-2DAE-7999180D8CBD</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="360DA978-201D-FFFA-88BB-58DB5CD32046" name="ORDERS PK">
+<identifier id="7E911860-800C-93A5-555A-0D9899D254A8" name="PRODUCT PK">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 15:11:56 UTC</createdTime>
+<createdTime>2025-04-30 15:35:50 UTC</createdTime>
 <ownerDesignName>cust_orders</ownerDesignName>
 <engineerTo>
 <item key="116B1AE0-068A-4360-D2BA-613C2522266B" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>9221B1C6-132C-D9EF-2BE1-1639880D889F</attributeRef>
+<attributeRef>592A2DD1-DBDB-2978-98FC-512EFFD6C657</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
