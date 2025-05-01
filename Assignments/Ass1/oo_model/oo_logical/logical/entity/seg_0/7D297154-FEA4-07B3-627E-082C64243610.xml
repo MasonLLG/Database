@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D297154-FEA4-07B3-627E-082C64243610" name="MANIFEST">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D297154-FEA4-07B3-627E-082C64243610" name="BOOKING">
 <createdBy>ALIENWARE</createdBy>
 <createdTime>2025-05-01 09:05:09 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>
@@ -15,6 +15,52 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bk_no" id="1EF5A6D5-6B53-4492-94F9-71CA962CFBB5">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:50:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Booking number]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pas_id" id="EC9108E3-82FB-843B-879A-DBF4014C4E5E">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 10:17:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>F4048F5D-A674-F189-429F-359A8970F38C</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<referedAttribute>E1AF8338-0D51-E151-A659-F4DCE4E93A90</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cruise_id" id="AF023B73-8F52-8BC2-BC16-532E583FD72E">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:33:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>F3AF3B09-B1EF-3C3F-1365-73B5BC5B4D7A</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<referedAttribute>213A9F58-B71E-1F88-D355-8852DA28F9FA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="cab_no" id="5C171689-53C5-D5E1-EC96-9EA919C54B75">
 <createdBy>ALIENWARE</createdBy>
 <createdTime>2025-05-01 09:13:03 UTC</createdTime>
@@ -47,50 +93,20 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="pas_bod_date_time" id="CC35651E-7EA0-3DD2-802A-21F0415CDAE2">
+<Attribute name="mani_name" id="F3278442-FAF4-FCF5-8C94-D327489B90B3">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 09:29:20 UTC</createdTime>
-<commentInRDBMS><![CDATA[Passenger boarding date and time if board]]></commentInRDBMS>
+<createdTime>2025-05-01 09:49:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manifest name]]></commentInRDBMS>
+<generatorID>3230BF8F-EFAA-DED4-96E4-0636DAE52C20</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8943FDF3-E9BF-3902-F533-D04FF8FC5B77</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT008</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="pas_id" id="40BA8F91-3BFA-0314-B02E-359500BDEC1A">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 09:32:46 UTC</createdTime>
-<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
-<generatorID>F4048F5D-A674-F189-429F-359A8970F38C</generatorID>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<referedAttribute>26FDAA25-7303-6F1D-728A-556FD389793D</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="cruise_id" id="AF023B73-8F52-8BC2-BC16-532E583FD72E">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 09:33:50 UTC</createdTime>
-<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
-<generatorID>F3AF3B09-B1EF-3C3F-1365-73B5BC5B4D7A</generatorID>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<referedAttribute>213A9F58-B71E-1F88-D355-8852DA28F9FA</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -104,8 +120,22 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>40BA8F91-3BFA-0314-B02E-359500BDEC1A</attributeRef>
+<attributeRef>1EF5A6D5-6B53-4492-94F9-71CA962CFBB5</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="99C65106-749B-EA8A-B215-45117AE78AD2" name="BOOKING_NK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:53:01 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<newElementsIDs>F4048F5D-A674-F189-429F-359A8970F38C,F3AF3B09-B1EF-3C3F-1365-73B5BC5B4D7A,760EEB08-ECD9-665F-5D6D-104930EE7AE3</newElementsIDs>
+<usedAttributes>
+<attributeRef>EC9108E3-82FB-843B-879A-DBF4014C4E5E</attributeRef>
 <attributeRef>AF023B73-8F52-8BC2-BC16-532E583FD72E</attributeRef>
+<attributeRef>5C171689-53C5-D5E1-EC96-9EA919C54B75</attributeRef>
+<attributeRef>FEB4EE1C-FE42-4296-29E9-537DFE37FC96</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

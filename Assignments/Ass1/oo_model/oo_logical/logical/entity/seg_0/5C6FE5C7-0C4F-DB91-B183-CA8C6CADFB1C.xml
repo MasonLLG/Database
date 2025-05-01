@@ -15,6 +15,20 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pas_id" id="E1AF8338-0D51-E151-A659-F4DCE4E93A90">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 10:16:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="pas_fstname" id="5A82CBCA-D8B6-7D82-6292-6FE1A3630FC5">
 <createdBy>ALIENWARE</createdBy>
 <createdTime>2025-05-01 08:03:39 UTC</createdTime>
@@ -106,75 +120,37 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="street" id="7EDBB857-8DE3-91A2-E35E-F9273C3FA1C0">
+<Attribute name="pas_id1" id="948495B2-B467-6511-5C3B-95A7A6A89374">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 08:24:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Passenger address street]]></commentInRDBMS>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="town" id="65D0C9EE-73F9-D577-5C2E-4310918F7373">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 08:25:09 UTC</createdTime>
-<commentInRDBMS><![CDATA[Passenger address town]]></commentInRDBMS>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="postcode" id="DFC86607-2313-34E1-D792-BBCDFFE8E1CE">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 08:25:39 UTC</createdTime>
-<commentInRDBMS><![CDATA[Passenger address postcode]]></commentInRDBMS>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="country_name" id="7B77906D-2DD8-F098-9EEF-A8C80B811DB9">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 08:26:04 UTC</createdTime>
-<commentInRDBMS><![CDATA[Passenger address country name]]></commentInRDBMS>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="pas_id" id="26FDAA25-7303-6F1D-728A-556FD389793D">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 09:32:03 UTC</createdTime>
+<createdTime>2025-05-01 10:18:04 UTC</createdTime>
 <commentInRDBMS><![CDATA[Passenger ID]]></commentInRDBMS>
+<generatorID>7D2FAC62-E995-902A-AD4C-4E73BF2FCFD7</generatorID>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E1AF8338-0D51-E151-A659-F4DCE4E93A90</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="addr_no" id="70FF6811-A0E1-2807-0F78-3DE2016B2185">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 10:26:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Address number]]></commentInRDBMS>
+<generatorID>E1CC6371-8B0D-864E-0D0C-3003DEF08BBA</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<referedAttribute>7CB3EBBC-799A-3952-5393-428E3AB6C427</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -187,7 +163,7 @@
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>26FDAA25-7303-6F1D-728A-556FD389793D</attributeRef>
+<attributeRef>E1AF8338-0D51-E151-A659-F4DCE4E93A90</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -29,6 +29,22 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ship_code" id="EFBE67D4-622D-0E2A-3BE0-361355D9FA1D">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 21:05:31 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<generatorID>430E024B-CB74-76EE-A3D5-F13F3132DA0A</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<referedAttribute>6545DB2B-2DD9-55EE-7CE7-456DAF4DE2CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="slp_capacity" id="CC36AF59-20C3-015E-35C6-C35AA5171B87">
 <createdBy>ALIENWARE</createdBy>
 <createdTime>2025-04-30 21:02:05 UTC</createdTime>
@@ -63,22 +79,6 @@
 <valueDef value="S" description="Suite"/>
 </listOfValues>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ship_code" id="EFBE67D4-622D-0E2A-3BE0-361355D9FA1D">
-<createdBy>ALIENWARE</createdBy>
-<createdTime>2025-04-30 21:05:31 UTC</createdTime>
-<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
-<generatorID>430E024B-CB74-76EE-A3D5-F13F3132DA0A</generatorID>
-<ownerDesignName>oo_logical</ownerDesignName>
-<engineerTo>
-<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
-</engineerTo>
-<referedAttribute>6545DB2B-2DD9-55EE-7CE7-456DAF4DE2CF</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

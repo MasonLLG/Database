@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD65317C-F8BA-A05B-9C6C-188CC4BE19C6" name="MANIFEST">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:41:28 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mani_name" id="8943FDF3-E9BF-3902-F533-D04FF8FC5B77">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:44:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Manifest name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pas_bod_date_time" id="AD48CB24-CAA3-0429-6FAF-82318281EA42">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:47:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Passenger boarding date and time if board ]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1E852910-E12E-5D02-EA47-ECF1305D0BEB" name="MANIFEST PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:46:38 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8943FDF3-E9BF-3902-F533-D04FF8FC5B77</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

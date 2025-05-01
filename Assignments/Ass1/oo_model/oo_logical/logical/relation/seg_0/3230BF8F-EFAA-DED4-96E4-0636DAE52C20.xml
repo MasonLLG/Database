@@ -1,19 +1,18 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pas_bk_pk" directorySegmentName="seg_0" id="F4048F5D-A674-F189-429F-359A8970F38C">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="mani_bk_fk" directorySegmentName="seg_0" id="3230BF8F-EFAA-DED4-96E4-0636DAE52C20">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 09:32:46 UTC</createdTime>
+<createdTime>2025-05-01 09:49:13 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
 </engineerTo>
-<sourcePk>4B22F9E6-DFA8-4A8D-5F11-8CC29409072D</sourcePk>
+<sourcePk>1E852910-E12E-5D02-EA47-ECF1305D0BEB</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>book</nameOnSource>
-<nameOnTarget> </nameOnTarget>
+<nameOnSource>has</nameOnSource>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C</sourceEntity>
+<sourceEntity>DD65317C-F8BA-A05B-9C6C-188CC4BE19C6</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
 <targetEntity>7D297154-FEA4-07B3-627E-082C64243610</targetEntity>
 <transferable>true</transferable>

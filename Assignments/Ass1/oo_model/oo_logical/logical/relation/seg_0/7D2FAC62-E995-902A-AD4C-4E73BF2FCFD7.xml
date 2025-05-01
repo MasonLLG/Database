@@ -1,12 +1,13 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pas_pas_pk" directorySegmentName="seg_0" id="3E76E51D-383A-A2EE-C37A-073507F91CC4">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pas_pas_fk" directorySegmentName="seg_0" id="7D2FAC62-E995-902A-AD4C-4E73BF2FCFD7">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 08:27:04 UTC</createdTime>
+<createdTime>2025-05-01 10:15:34 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
 </engineerTo>
 <sourcePk>4B22F9E6-DFA8-4A8D-5F11-8CC29409072D</sourcePk>
+<targetPk>4B22F9E6-DFA8-4A8D-5F11-8CC29409072D</targetPk>
 <identifying>false</identifying>
 <nameOnSource>guards</nameOnSource>
 <nameOnTarget> </nameOnTarget>
@@ -14,7 +15,7 @@
 <optionalTarget>true</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
 <sourceEntity>5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C</sourceEntity>
-<targetCardinalityString>*</targetCardinalityString>
+<targetCardinalityString>1</targetCardinalityString>
 <targetEntity>5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

@@ -1,21 +1,21 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pas_bk_pk" directorySegmentName="seg_0" id="F4048F5D-A674-F189-429F-359A8970F38C">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="addr_pas_fk" directorySegmentName="seg_0" id="E1CC6371-8B0D-864E-0D0C-3003DEF08BBA">
 <createdBy>ALIENWARE</createdBy>
-<createdTime>2025-05-01 09:32:46 UTC</createdTime>
+<createdTime>2025-05-01 10:21:42 UTC</createdTime>
 <ownerDesignName>oo_logical</ownerDesignName>
 <engineerTo>
 <item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
 </engineerTo>
-<sourcePk>4B22F9E6-DFA8-4A8D-5F11-8CC29409072D</sourcePk>
+<sourcePk>115574F4-EF16-120F-D64D-432C03A7DA97</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>book</nameOnSource>
-<nameOnTarget> </nameOnTarget>
+<nameOnSource> </nameOnSource>
+<nameOnTarget>has</nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
-<sourceEntity>5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C</sourceEntity>
+<sourceEntity>53DE7C88-DCD7-0C65-AE5B-C390EDAC1790</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>7D297154-FEA4-07B3-627E-082C64243610</targetEntity>
+<targetEntity>5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>
