@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cruise_ship_fk" directorySegmentName="seg_0" id="4CABAE05-7BB1-3C4B-AF42-DD5148296F4F">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 08:57:53 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<sourcePk>E69A1094-35D5-9F4F-5B32-E75FD6F70D72</sourcePk>
+<targetPk>4819029C-046F-BF77-BC27-F48B96D22043</targetPk>
+<identifying>false</identifying>
+<nameOnSource>uses</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D44A8584-0BC4-8444-92B4-7CF48F9FACB5</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>CA56B0CE-DC7D-0B5D-F198-6EBD4FCD7129</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

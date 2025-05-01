@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ship_cab_fk" directorySegmentName="seg_0" id="430E024B-CB74-76EE-A3D5-F13F3132DA0A">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 21:05:31 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<sourcePk>4819029C-046F-BF77-BC27-F48B96D22043</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CA56B0CE-DC7D-0B5D-F198-6EBD4FCD7129</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5F40A741-2BFA-7DFA-9D24-6FC08AF90B09</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

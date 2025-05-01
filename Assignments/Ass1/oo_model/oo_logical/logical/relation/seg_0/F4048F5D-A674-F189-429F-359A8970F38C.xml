@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="pas_mani_pk" directorySegmentName="seg_0" id="F4048F5D-A674-F189-429F-359A8970F38C">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:32:46 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<sourcePk>4B22F9E6-DFA8-4A8D-5F11-8CC29409072D</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>book</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5C6FE5C7-0C4F-DB91-B183-CA8C6CADFB1C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7D297154-FEA4-07B3-627E-082C64243610</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

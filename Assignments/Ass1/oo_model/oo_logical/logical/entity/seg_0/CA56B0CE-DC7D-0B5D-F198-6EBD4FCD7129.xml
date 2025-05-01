@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CA56B0CE-DC7D-0B5D-F198-6EBD4FCD7129" name="SHIP">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:20:10 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ship_code" id="6545DB2B-2DD9-55EE-7CE7-456DAF4DE2CF">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:20:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship code]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_name" id="F90531CD-4F11-2B57-EBD0-AD638E69C1EC">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:21:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship name]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="com_date" id="82A1799F-E68A-DA5B-430C-BE99E99A9174">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:21:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship commission date]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ship_ton" id="F793C010-065F-692F-79DE-F7080E351A21">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:23:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship tonnage]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="max_gst_cap" id="8C539CC0-B266-E1C4-F556-F5FA663DED75">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:24:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship maximum guest capacity]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reg_country" id="6F826E5E-38F4-B015-E5E8-C4A35AC94A93">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:25:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ship register country]]></commentInRDBMS>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="op_id" id="827D7F23-6B0D-17C7-1DEE-056B43875508">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 20:58:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Operator ID]]></commentInRDBMS>
+<generatorID>2B4A0166-70ED-386F-73F8-4035B4C33240</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<referedAttribute>11123C45-D305-59CB-FA70-6AC4BA36DA4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cruise_id" id="8A338665-59AA-18AA-336D-9F255CB82DAD">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-05-01 09:33:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cruise ID]]></commentInRDBMS>
+<generatorID>4CABAE05-7BB1-3C4B-AF42-DD5148296F4F</generatorID>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<referedAttribute>213A9F58-B71E-1F88-D355-8852DA28F9FA</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4819029C-046F-BF77-BC27-F48B96D22043" name="SHIP PK">
+<createdBy>ALIENWARE</createdBy>
+<createdTime>2025-04-30 19:21:13 UTC</createdTime>
+<ownerDesignName>oo_logical</ownerDesignName>
+<engineerTo>
+<item key="33C67C91-BDA3-A3F5-4D27-80B615705990" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6545DB2B-2DD9-55EE-7CE7-456DAF4DE2CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
