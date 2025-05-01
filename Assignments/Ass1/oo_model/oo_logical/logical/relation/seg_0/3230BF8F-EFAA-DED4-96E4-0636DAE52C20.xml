@@ -8,7 +8,8 @@
 </engineerTo>
 <sourcePk>1E852910-E12E-5D02-EA47-ECF1305D0BEB</sourcePk>
 <identifying>false</identifying>
-<nameOnSource>has</nameOnSource>
+<nameOnSource>manage</nameOnSource>
+<nameOnTarget> </nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
