@@ -1,8 +1,8 @@
 // *****PLEASE ENTER YOUR DETAILS BELOW*****
 // T6-rm-mongo.mongodb.js
 
-// Student ID:
-// Student Name:
+// Student ID:34274723
+// Student Name:Jichao Liang
 
 // Comments for your marker:
 

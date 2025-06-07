@@ -1,8 +1,8 @@
 /*****PLEASE ENTER YOUR DETAILS BELOW*****/
 --T1-rm-schema.sql
 
---Student ID:
---Student Name:
+--Student ID:34274723
+--Student Name:Jichao Liang
 
 /* Comments for your marker:
 
