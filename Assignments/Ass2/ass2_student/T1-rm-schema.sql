@@ -90,3 +90,16 @@ COMMENT ON COLUMN team.team_name IS 'Team name';
 COMMENT ON COLUMN team.carn_date IS 'Carnival Date';
 
 -- Add all missing FK Constraints below here
+--ENTRY
+ALTER TABLE entry ADD CONSTRAINT event_entry_fk FOREIGN KEY (event_id) REFERENCES event (event_id);
+
+ALTER TABLE entry ADD CONSTRAINT competitor_entry_fk FOREIGN KEY (comp_no) REFERENCES competitor (comp_no);
+
+ALTER TABLE entry ADD CONSTRAINT team_entry_fk FOREIGN KEY (team_id) REFERENCES team (team_id);
+
+ALTER TABLE entry ADD CONSTRAINT charity_entry_fk FOREIGN KEY (char_id) REFERENCES charity (char_id);
+
+--TEAM
+ALTER TABLE team ADD CONSTRAINT carnival_team_fk FOREIGN KEY (carn_date) REFERENCES carnival (carn_date);
+
+ALTER TABLE team ADD CONSTRAINT entry_team_fk FOREIGN KEY (event_id, entry_no) REFERENCES entry (event_id, entry_no);
