@@ -41,8 +41,8 @@ JOIN carnival     c  ON ev.carn_date = c.carn_date
 JOIN eventtype    et ON ev.eventtype_code = et.eventtype_code
 JOIN competitor   comp ON comp.comp_fname = 'Keith' AND comp.comp_lname = 'Rose'
 JOIN charity      ch   ON ch.char_name  = 'Salvation Army'
-WHERE c.carn_name = 'RM Winter Series Caulfield 2025'
-  AND et.eventtype_desc = '10 Km Run';
+WHERE UPPER(c.carn_name) = UPPER('RM WINTER SERIES CAULFIELD 2025')
+  AND UPPER(et.eventtype_desc) = UPPER('10 km run');
  
 INSERT INTO entry (event_id, entry_no, comp_no, char_id)
 SELECT ev.event_id,
@@ -54,8 +54,8 @@ JOIN carnival     c  ON ev.carn_date = c.carn_date
 JOIN eventtype    et ON ev.eventtype_code = et.eventtype_code
 JOIN competitor   comp ON comp.comp_fname = 'Jackson' AND comp.comp_lname = 'Bull'
 JOIN charity      ch   ON ch.char_name  = 'RSPCA'
-WHERE c.carn_name = 'RM Winter Series Caulfield 2025'
-  AND et.eventtype_desc = '10 Km Run';
+WHERE UPPER(c.carn_name) = UPPER('RM WINTER SERIES CAULFIELD 2025')
+  AND UPPER(et.eventtype_desc) = UPPER('10 km run');
 
 COMMIT;
 
@@ -71,8 +71,8 @@ JOIN carnival c ON ev.carn_date = c.carn_date
 JOIN eventtype et ON ev.eventtype_code = et.eventtype_code
 JOIN entry e     ON e.event_id = ev.event_id
 JOIN competitor comp ON comp.comp_no = e.comp_no
-WHERE c.carn_name = 'RM Winter Series Caulfield 2025'
-  AND et.eventtype_desc = '10 Km Run'
+WHERE UPPER(c.carn_name) = UPPER('RM WINTER SERIES CAULFIELD 2025')
+  AND UPPER(et.eventtype_desc) = UPPER('10 km run')
   AND comp.comp_fname = 'Keith'
   AND comp.comp_lname = 'Rose';
 
@@ -82,7 +82,33 @@ WHERE comp_no IN (SELECT comp_no FROM competitor WHERE (comp_fname='Keith' AND c
 COMMIT;
 
 --(c)
+-- Transaction 4: Jackson downgrades to 5 Km and changes charity
+UPDATE entry
+SET    event_id  = (SELECT ev5.event_id
+                    FROM event ev5
+                    JOIN carnival c5 ON ev5.carn_date = c5.carn_date
+                    JOIN eventtype et5 ON ev5.eventtype_code = et5.eventtype_code
+                    WHERE UPPER(c5.carn_name) = UPPER('RM WINTER SERIES CAULFIELD 2025')
+                      AND REPLACE(UPPER(et5.eventtype_desc), ' ', '') = REPLACE(UPPER('5km run'), ' ', '')),
+       entry_no  = (SELECT NVL(MAX(e2.entry_no),0)+1
+                    FROM entry e2
+                    WHERE e2.event_id = (SELECT ev6.event_id
+                                        FROM event ev6
+                                        JOIN carnival c6 ON ev6.carn_date = c6.carn_date
+                                        JOIN eventtype et6 ON ev6.eventtype_code = et6.eventtype_code
+                                        WHERE UPPER(c6.carn_name) = UPPER('RM WINTER SERIES CAULFIELD 2025')
+                                          AND REPLACE(UPPER(et6.eventtype_desc), ' ', '') = REPLACE(UPPER('5km run'), ' ', ''))),
+       char_id   = (SELECT char_id FROM charity WHERE char_name = 'Beyond Blue'),
+       team_id = (SELECT team_id FROM team WHERE team_name = 'Super Runners')
+WHERE  comp_no = (SELECT comp_no FROM competitor WHERE comp_fname = 'Jackson' AND comp_lname = 'Bull')
+  AND  event_id = (SELECT ev10.event_id
+                   FROM event ev10
+                   JOIN carnival c10 ON ev10.carn_date = c10.carn_date
+                   JOIN eventtype et10 ON ev10.eventtype_code = et10.eventtype_code
+                   WHERE UPPER(c10.carn_name) = UPPER('RM WINTER SERIES CAULFIELD 2025')
+                     AND REPLACE(UPPER(et10.eventtype_desc), ' ', '') = REPLACE(UPPER('10 km run'), ' ', ''));
 
+COMMIT;
 
 --(d)
 
