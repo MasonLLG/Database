@@ -111,6 +111,26 @@ WHERE  comp_no = (SELECT comp_no FROM competitor WHERE comp_fname = 'Jackson' AN
 COMMIT;
 
 --(d)
+-- Transaction 5: Keith withdraws, disband Super Runners team
+UPDATE entry 
+SET team_id = NULL
+WHERE team_id = (SELECT team_id FROM team WHERE team_name = 'Super Runners' 
+                 AND carn_date = (SELECT carn_date FROM carnival WHERE carn_name = 'RM Winter Series Caulfield 2025'));
+
+DELETE FROM team 
+WHERE team_name = 'Super Runners'
+  AND carn_date = (SELECT carn_date FROM carnival WHERE carn_name = 'RM Winter Series Caulfield 2025');
+
+DELETE FROM entry
+WHERE comp_no = (SELECT comp_no FROM competitor WHERE comp_fname = 'Keith' AND comp_lname = 'Rose')
+  AND event_id IN (SELECT ev.event_id
+                   FROM event ev
+                   JOIN carnival c ON ev.carn_date = c.carn_date
+                   WHERE UPPER(c.carn_name) = UPPER('RM WINTER SERIES CAULFIELD 2025'));
+
+COMMIT;
+
+
 
 
 
