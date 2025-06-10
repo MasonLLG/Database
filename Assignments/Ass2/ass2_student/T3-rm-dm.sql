@@ -21,32 +21,63 @@ CREATE SEQUENCE team_id_seq START WITH 100 INCREMENT BY 5 MINVALUE 100;
 COMMIT;
 
 --(b)
--- Add competitor Keith Rose - transaction 1
+-- Transaction 1: Add both competitors
 INSERT INTO competitor (comp_no, comp_fname, comp_lname, comp_gender, comp_dob, comp_phone, comp_email, comp_unistatus)
 VALUES (comp_no_seq.NEXTVAL, 'Keith', 'Rose', 'M', TO_DATE('15/JAN/1995','DD/MON/YYYY'), '0422141112', 'keith.rose@monash.edu', 'Y');
 
-INSERT INTO entry (event_id, entry_no, comp_no, char_id)
-VALUES (13, 1, comp_no_seq.CURRVAL, 3);  
-
-INSERT INTO team (team_id, team_name, carn_date, event_id, entry_no)
-VALUES (team_id_seq.NEXTVAL, 'Super Runners', TO_DATE('29/JUN/2025','DD/MON/YYYY'), 13, 1);
-
-UPDATE entry 
-SET team_id = team_id_seq.CURRVAL
-WHERE event_id = 13 AND entry_no = 1;
-
-COMMIT;
-
--- Add competitor Jackson Bull - transaction 2
 INSERT INTO competitor (comp_no, comp_fname, comp_lname, comp_gender, comp_dob, comp_phone, comp_email, comp_unistatus)
 VALUES (comp_no_seq.NEXTVAL, 'Jackson', 'Bull', 'M', TO_DATE('20/MAR/1996','DD/MON/YYYY'), '0422412524', 'jackson.bull@monash.edu', 'Y');
 
-INSERT INTO entry (event_id, entry_no, comp_no, char_id)
-VALUES (13, 2, comp_no_seq.CURRVAL, 1);
+COMMIT;
 
-UPDATE entry 
-SET team_id = team_id_seq.CURRVAL
-WHERE event_id = 13 AND entry_no = 2;
+-- Transaction 2: Add entries for both competitors
+INSERT INTO entry (event_id, entry_no, comp_no, char_id)
+SELECT ev.event_id,
+       (SELECT NVL(MAX(entry_no),0)+1 FROM entry WHERE event_id = ev.event_id) AS next_entry_no,
+       comp.comp_no,
+       ch.char_id
+FROM event        ev
+JOIN carnival     c  ON ev.carn_date = c.carn_date
+JOIN eventtype    et ON ev.eventtype_code = et.eventtype_code
+JOIN competitor   comp ON comp.comp_fname = 'Keith' AND comp.comp_lname = 'Rose'
+JOIN charity      ch   ON ch.char_name  = 'Salvation Army'
+WHERE c.carn_name = 'RM Winter Series Caulfield 2025'
+  AND et.eventtype_desc = '10 Km Run';
+ 
+INSERT INTO entry (event_id, entry_no, comp_no, char_id)
+SELECT ev.event_id,
+       (SELECT NVL(MAX(entry_no),0)+1 FROM entry WHERE event_id = ev.event_id) AS next_entry_no,
+       comp.comp_no,
+       ch.char_id
+FROM event        ev
+JOIN carnival     c  ON ev.carn_date = c.carn_date
+JOIN eventtype    et ON ev.eventtype_code = et.eventtype_code
+JOIN competitor   comp ON comp.comp_fname = 'Jackson' AND comp.comp_lname = 'Bull'
+JOIN charity      ch   ON ch.char_name  = 'RSPCA'
+WHERE c.carn_name = 'RM Winter Series Caulfield 2025'
+  AND et.eventtype_desc = '10 Km Run';
+
+COMMIT;
+
+-- Transaction 3: Create team and assign members
+INSERT INTO team (team_id, team_name, carn_date, event_id, entry_no)
+SELECT team_id_seq.NEXTVAL,
+       'Super Runners',
+       ev.carn_date,
+       ev.event_id,
+       e.entry_no
+FROM event ev
+JOIN carnival c ON ev.carn_date = c.carn_date
+JOIN eventtype et ON ev.eventtype_code = et.eventtype_code
+JOIN entry e     ON e.event_id = ev.event_id
+JOIN competitor comp ON comp.comp_no = e.comp_no
+WHERE c.carn_name = 'RM Winter Series Caulfield 2025'
+  AND et.eventtype_desc = '10 Km Run'
+  AND comp.comp_fname = 'Keith'
+  AND comp.comp_lname = 'Rose';
+
+UPDATE entry SET team_id = (SELECT team_id FROM team WHERE team_name='Super Runners' AND carn_date=(SELECT carn_date FROM carnival WHERE carn_name='RM Winter Series Caulfield 2025'))
+WHERE comp_no IN (SELECT comp_no FROM competitor WHERE (comp_fname='Keith' AND comp_lname='Rose') OR (comp_fname='Jackson' AND comp_lname='Bull'));
 
 COMMIT;
 
@@ -54,3 +85,6 @@ COMMIT;
 
 
 --(d)
+
+
+
