@@ -37,6 +37,8 @@ COMMIT;
 --(b)
 SAVEPOINT before_charity_changes;
 
+DROP TABLE entry_charity CASCADE CONSTRAINT PURGE;
+
 CREATE TABLE entry_charity (
     event_id     NUMBER(6) NOT NULL,
     entry_no     NUMBER(5) NOT NULL,
