@@ -71,23 +71,59 @@ db.run_monash_teams.find(
 
 
 // (i) Add new team
-
-
-
-
+db.run_monash_teams.insertOne({
+    "_id": 55,
+    "carn_name": "RM Winter Series Caulfield 2025",
+    "carn_date": "29-Jun-2025",
+    "team_name": "The Great Runners",
+    "team_leader": {
+        "name": "Jackson Bull",
+        "phone": "0422412524",
+        "email": "jackson.bull@example.com"
+    },
+    "team_no_of_members": 1,
+    "team_members": [
+        {
+            "competitor_name": "Jackson Bull",
+            "competitor_phone": "0422412524",
+            "event_type": "5 Km Run",
+            "entry_no": 1,
+            "starttime": "-",
+            "finishtime": "-",
+            "elapsedtime": "-"
+        }
+    ]
+});
 
 // Illustrate/confirm changes made
-
-
-
-
+db.run_monash_teams.find(
+    {"team_name": "The Great Runners"},
+    {_id: 0}
+);
 
 // (ii) Add new team member
-
-
-
-
+db.run_monash_teams.updateOne(
+    {"team_name": "The Great Runners"},
+    {
+        $push: {
+            "team_members": {
+                "competitor_name": "Steve Bull",
+                "competitor_phone": "0422251427",
+                "event_type": "10 Km Run",
+                "entry_no": 2,
+                "starttime": "-",
+                "finishtime": "-",
+                "elapsedtime": "-"
+            }
+        },
+        $set: {"team_no_of_members": 2}
+    }
+);
 
 // Illustrate/confirm changes made
+db.run_monash_teams.find(
+    {"team_name": "The Great Runners"},
+    {_id: 0}
+);
 
 
