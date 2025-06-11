@@ -83,4 +83,35 @@ ORDER BY eventtype.eventtype_desc, competitor.comp_no;
 -- ENSURE that your query is formatted and has a semicolon
 -- (;) at the end of this answer
 
+SELECT carn_name,
+       carn_date,
+       eventtype_desc,
+       CASE
+           WHEN entry_count = 0 THEN 'Not offered'
+           ELSE TO_CHAR(entry_count)
+       END AS entries,
+       CASE
+           WHEN entry_count = 0 THEN 0
+           ELSE ROUND((entry_count * 100.0) / total_entries)
+       END AS percentage
+FROM (
+    SELECT carnival.carn_name,
+           carnival.carn_date,
+           eventtype.eventtype_desc,
+           NVL(COUNT(entry.event_id), 0) AS entry_count,
+           (SELECT COUNT(*)
+            FROM entry
+            JOIN event ON entry.event_id = event.event_id
+            WHERE event.carn_date = carnival.carn_date) AS total_entries
+    FROM carnival
+    CROSS JOIN eventtype
+    LEFT JOIN event ON carnival.carn_date = event.carn_date AND eventtype.eventtype_code = event.eventtype_code
+    LEFT JOIN entry ON event.event_id = entry.event_id
+    GROUP BY carnival.carn_name, carnival.carn_date, eventtype.eventtype_desc, eventtype.eventtype_code
+) carnival_data
+WHERE total_entries > 0
+ORDER BY carn_date,
+         CASE WHEN entry_count = 0 THEN -1 ELSE entry_count END DESC,
+         eventtype_desc;
+
 
