@@ -45,9 +45,10 @@ db.run_monash_teams.find();
 
 db.run_monash_teams.find(
     {
-        "team_members.event_type": {
-            $in: ["5 Km Run", "10 Km Run"]
-        }
+        $or: [
+            {"team_members.event_type": "5 Km Run"},
+            {"team_members.event_type": "10 Km Run"}
+        ]
     },
     {
         _id: 0,
