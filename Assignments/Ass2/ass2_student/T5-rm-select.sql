@@ -54,6 +54,25 @@ ORDER BY team.team_name, team.carn_date;
 -- ENSURE that your query is formatted and has a semicolon
 -- (;) at the end of this answer
 
+SELECT eventtype.eventtype_desc AS "Event",
+       carnival.carn_name || ', ' || TO_CHAR(carnival.carn_date, 'Day') || ' ' || TO_CHAR(carnival.carn_date, 'DD/MM/YYYY') AS "Carnival",
+       TO_CHAR(entry.entry_elapsedtime, 'HH24:MI:SS') AS "Record Time",
+       competitor.comp_no || ' ' || competitor.comp_fname || ' ' || competitor.comp_lname AS "Competitor",
+       TRUNC(MONTHS_BETWEEN(carnival.carn_date, competitor.comp_dob) / 12) AS "Age"
+FROM entry
+JOIN event ON entry.event_id = event.event_id
+JOIN eventtype ON event.eventtype_code = eventtype.eventtype_code
+JOIN competitor ON entry.comp_no = competitor.comp_no
+JOIN carnival ON event.carn_date = carnival.carn_date
+WHERE entry.entry_elapsedtime IS NOT NULL
+AND entry.entry_elapsedtime = (
+    SELECT MIN(entry.entry_elapsedtime)
+    FROM entry
+    JOIN event ON entry.event_id = event.event_id
+    WHERE event.eventtype_code = eventtype.eventtype_code
+    AND entry.entry_elapsedtime IS NOT NULL
+)
+ORDER BY eventtype.eventtype_desc, competitor.comp_no;
 
 
 
